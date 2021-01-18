@@ -12,3 +12,5 @@ for votes in range(time):
     passValues = {'id': '1844', 'holdthedoor': 'Submit', 'key': 'freshCookie'}
     kookies = {'HoldTheDoor': 'freshCookie'}
     r = requests.post(url, data=passValues, cookies=kookies)
+    print(r.status_code)
+    print('done')
